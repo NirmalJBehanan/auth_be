@@ -10,7 +10,7 @@ const brevo = new BrevoClient({
 
 export const sendForgetMail = async(email, token) => {
 
-    const reset = `http://localhost:5173/reset-password/${token}`;
+    const reset = `https://auth-be-htbs.onrender.com/${token}`;
 
     try {
         await brevo.transactionalEmails.sendTransacEmail({
