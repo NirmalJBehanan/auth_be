@@ -10,7 +10,7 @@ const brevo = new BrevoClient({
 
 export const sendForgetMail = async(email, token) => {
 
-    const reset = `https://auth-be-htbs.onrender.com/${token}`;
+    const reset = `https://autendication.netlify.app/${token}`;
 
     try {
         await brevo.transactionalEmails.sendTransacEmail({
